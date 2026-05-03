@@ -111,7 +111,7 @@ export default function Counter() {
 
 ## 4. Streaming
 `content/loading.js`
-คือการที่ client แสดงข้อมูลของหน้าในส่วนที่พร้อมก่อนออกมาได้เช่นในตัวอย่างนี้ Header, Footer คือส่วนที่พร้อมแล้ว และส่วนที่ fetch api ก็จะขึ้นว่า loading...
+คือการที่ client แสดงข้อมูลของหน้าในส่วนที่พร้อมก่อนออกมาได้เช่นในตัวอย่างนี้ Header, Footer คือส่วนที่พร้อมแล้ว และส่วนที่ fetch api ก็จะขึ้นว่า loading... ที่ `content/page.js` โดยที่ไม่ต้อง import มาใช้งาน next จะรู้ได้จาก component ที่ async อยู่
 
 ![alt text](./img/loading.gif)
 
