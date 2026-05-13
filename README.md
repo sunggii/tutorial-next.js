@@ -122,6 +122,52 @@ export default function Counter() {
 
 ![alt text](./img/action.gif)
 
+## Use ngrok
+- การใช้งาน ngrok สำหรับเปิด localhost ให้คนอื่นเข้าดูได้
+
+### 1. ติดตั้ง ngrok
+- เปิด Terminal แล้วพิมพ์: `npm install -g ngrok`
+- เช็คว่าทุกอย่างถูกต้อง `ngrok version`
+
+### 2. สมัคร Account ngrok
+สมัครฟรีที่: [https://dashboard.ngrok.com/signup](https://dashboard.ngrok.com/signup)
+
+
+### 3. รับ Authtoken
+หลัง Login เข้าไปที่:
+
+![alt text](./img/ngrok1.png)
+
+แล้ว coppy token มา
+
+### 4. เชื่อม Authtoken กับเครื่อง
+นำ token มาใส่ใน terminal:
+
+```
+ngrok config add-authtoken TOKEN_ของคุณ
+```
+
+### 5. เปิดโปรเจกต์ Localhost
+เปิดโปรเจกต์ก่อน:
+
+```
+npm run dev
+```
+
+### 6. เปิด ngrok tunnel
+เปิด Terminal ใหม่ แล้วพิมพ์:
+
+```
+ngrok http 3000
+```
+
+### 7. ผลลัพธ์ที่ได้
+ถ้าสำเร็จจะเห็น:
+
+![alt text](./img/ngrok2.png)
+
+coppy ไปเปิดได้เลย
+
 ## Ref
 - [doc พี่ไมค์](https://mikelopster.dev/posts/next-start)
 - [next doc](https://nextjs.org/docs)
