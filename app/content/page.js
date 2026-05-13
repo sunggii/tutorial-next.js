@@ -18,7 +18,7 @@ export default async function Page({  }) {
   }
 
   return (
-    <div>
+    <div className="bg-gray-100 p-4 rounded-xl">
       <h1>Blog list:</h1>
       {
         data.map((item) => (
